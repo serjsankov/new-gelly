@@ -1,0 +1,74 @@
+.container {
+    padding: 0 32px;
+}
+
+.main-banner__top-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.main-banner__bottom-flex {
+    justify-content: space-evenly;
+}
+
+
+
+/*=====================*/
+/*######################################*/
+/*========================*/
+/********* section models style *********/
+/*=======================*/
+/*######################################*/
+/*=====================*/
+
+
+.model-list__item {
+    display: flex;
+
+    position: relative;
+}
+
+.model-list__item.info-blue {
+    flex-direction: row-reverse;
+}
+
+.model-list__item-img {
+    width: 50%;
+}
+
+.model-list__item-info {
+    width: 50%;
+}
+
+.model-list__item-btn {
+    width: 100%;
+}
+
+/*####################===============###################*/
+/*####################===============###################*/
+/*####################===============###################*/
+
+@media screen and (min-width: 1024px) {
+    .header-menu {
+        position: static;
+    }
+
+    .header-menu__nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .header-menu__nav-link {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-black-blue);
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header__link-img {
+        display: inline-block;
+    }
+}
