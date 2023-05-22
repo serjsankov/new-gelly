@@ -142,7 +142,7 @@
     margin-top: 92px;
 }
 
-.model-list__item.info-gray .model-list__item-info-bottom::before {
+/* .model-list__item.info-gray .model-list__item-info-bottom::before {
     content: "";
 
     display: block;
@@ -155,7 +155,7 @@
     margin-left: -150px;
 
     margin-bottom: 14px;
-}
+} */
 
 
 .model-list__item-credit {
@@ -187,13 +187,26 @@
 }
 
 .model-list__item.info-blue .line-position {
-    height: 1px;
+    height: 2px;
     width: 635px;
 
     background: var(--color-gray);
 
     position: absolute;
     bottom: 71px;
+
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.model-list__item.info-gray .line-position {
+    height: 2px;
+    width: 635px;
+
+    background: var(--color-black-blue);
+
+    position: absolute;
+    top: 158px;
 
     left: 50%;
     transform: translate3d(-50%, 0, 0);
@@ -261,8 +274,12 @@
         line-height: 19px;
     }
 
-    .model-list__item.info-gray .model-list__item-info-bottom::before {
+    /* .model-list__item.info-gray .model-list__item-info-bottom::before {
         width: 394px;
+    } */
+
+    .model-list__item.info-gray .line-position {
+        top: 57px;
     }
 
 }
@@ -276,9 +293,9 @@
         padding: 0 80px 0 320px;
     }
 
-    .model-list__item.info-gray .model-list__item-info-bottom::before {
+    /* .model-list__item.info-gray .model-list__item-info-bottom::before {
         margin-left: -80px;
-    }
+    } */
 }
 
 
@@ -295,11 +312,11 @@
         padding: 0 50px 0 150px;
     }
 
-    .model-list__item.info-gray .model-list__item-info-bottom::before {
+    /* .model-list__item.info-gray .model-list__item-info-bottom::before {
         width: 294px;
 
         margin-left: -50px;
-    }
+    } */
 
     .main-banner__bottom-flex {
         justify-content: space-evenly;
@@ -314,6 +331,10 @@
     .main-banner__top {
         padding-top: 56px;
         padding-bottom: 271px;
+    }
+
+    .model-list__item.info-gray .line-position {
+        top: 30px;
     }
 }
 
@@ -371,7 +392,7 @@
         line-height: 32px;
     }
 
-    .model-list__item.info-gray .model-list__item-info-bottom::before {
+    /* .model-list__item.info-gray .model-list__item-info-bottom::before {
         margin-left: -30px;
-    }
+    } */
 }
