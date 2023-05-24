@@ -92,7 +92,7 @@ button {
     content: "";
 
     display: block;
-    
+
     width: 42px;
     height: 1px;
 
@@ -119,17 +119,85 @@ button {
 
 .header-menu {
     position: fixed;
+    top: 0;
     right: -100%;
+    opacity: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-gray);
+
+    padding: 0 16px;
+    transition: all 0.3s;
+
+    padding-bottom: 118px;
 }
 
 .header-menu__nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
 }
 
 .header-menu__nav-link {
     text-decoration: none;
     text-transform: uppercase;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+}
+
+.header-menu__number {
+    position: relative;
+
+    margin-top: 85px;
+
+    padding: 21px 18px;
+
+    border-left: 1px solid var(--color-black-black-blue);
+    border-bottom: 1px solid var(--color-black-black-blue);
+
+    width: 265px;
+}
+
+.header-menu__number::before {
+    content: "";
+
+    display: block;
+
+    width: 69px;
+    height: 1px;
+
+    background: var(--color-black-black-blue);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-menu__number-link {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-black-black-blue);
+    text-decoration: none;
+}
+
+.header-menu__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 118px;
 }
 
 .header__link-phone {
@@ -150,6 +218,9 @@ button {
     display: flex;
     flex-direction: column;
     gap: 6px;
+
+    position: relative;
+    z-index: 3;
 }
 
 .burger-line {
@@ -163,6 +234,8 @@ button {
 
 .burger-line:first-child {
     position: relative;
+
+    transition: all .4s;
 }
 
 .burger-line:first-child::before {
@@ -177,6 +250,27 @@ button {
 
     position: absolute;
     bottom: 0;
+
+    transition: all .4s;
+}
+
+.header.active .burger-line:first-child::before {
+    bottom: -6px;
+}
+
+.header.active .burger-line:first-child {
+    margin-bottom: 6px;
+}
+
+.header.active .header-menu {
+    right: 0;
+    opacity: 1;
+}
+
+.header-menu__mob {
+    display: block;
+
+    margin: 0 auto;
 }
 
 
@@ -352,6 +446,31 @@ button {
 
 .models__upper {
     padding: 60px 0 30px;
+
+    position: relative;
+
+    width: max-content;
+}
+
+.models__line1 {
+    position: absolute;
+
+    bottom: 0;
+    right: -44px;
+
+    width: 1px;
+    height: 64px;
+
+    background: var(--color-gray);
+}
+
+.models__line2 {
+    width: 139px;
+    height: 1px;
+
+    background: var(--color-gray);
+
+    margin-top: 33px;
 }
 
 .models-container {
@@ -551,7 +670,7 @@ button {
 /*######################################*/
 /*=====================*/
 
-.equip__upper{
+.equip__upper {
     padding: 100px 0 40px;
 
     position: relative;
@@ -590,7 +709,7 @@ button {
 
     background: #AEBBC1;
 
-    
+
     margin-left: auto;
 
 }
@@ -644,6 +763,7 @@ button {
 
     color: var(--color-black-blue);
 }
+
 .equip-list__card-name-model b {
     font-weight: bold;
 }
@@ -786,7 +906,7 @@ button {
 .credit__text-line2 {
     width: 1px;
     height: 460px;
-    
+
     background: var(--color-black-blue);
 }
 
@@ -877,7 +997,7 @@ button {
     color: #E7E7E7;
 }
 
-.credit__bg-bottom-list-item  b {
+.credit__bg-bottom-list-item b {
     font-weight: bold;
 }
 
@@ -985,8 +1105,32 @@ button {
     padding-bottom: 18px;
 }
 
-.section__upper {
+.contacts__upper {
     padding: 60px 0;
+
+    position: relative;
+
+    width: max-content;
+}
+
+.contacts__line1 {
+    position: absolute;
+    top: 42px;
+    left: -16px;
+
+    width: 181px;
+    height: 1px;
+
+    background: var(--color-black-blue);
+}
+
+.contacts__line2 {
+    width: 1px;
+    height: 110px;
+
+    background: var(--color-black-blue);
+
+    margin-left: auto;
 }
 
 .contacts-map img {
@@ -1101,9 +1245,7 @@ button {
     }
 }
 
-@media screen and (min-width: 414px) {
-
-} 
+@media screen and (min-width: 414px) {}
 
 @media screen and (min-width: 425px) {
     .main-banner__img {
@@ -1123,7 +1265,7 @@ button {
         background-size: cover;
         background-position-x: 0;
     }
-    
+
 }
 
 @media screen and (min-width: 600px) {

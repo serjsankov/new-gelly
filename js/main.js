@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
 
 
   initClicks();
@@ -73,7 +74,12 @@ window.addEventListener("DOMContentLoaded", () => {
   function initClicks() {
       document.addEventListener("click", (event) => {
           if (event.target.closest(".burger")) {
-              
+              header.classList.toggle("active");
+              if (header.classList.contains("active")) { 
+                  document.body.style.overflow = "hidden";
+              } else {
+                document.body.style.overflow = "scroll";
+              }
             }
 
       })
