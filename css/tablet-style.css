@@ -88,11 +88,30 @@
 @media screen and (min-width: 1024px) {
     .header-menu {
         position: static;
+        width: auto;
+        height: auto;
+        opacity: 1;
+
+        padding: 0;
+    }
+
+    .header-menu__flex {
+        padding: 0;
+    }
+
+    .header-menu__number {
+        display: none;
+    }
+
+    .header-menu__mob-img {
+        display: none;
     }
 
     .header-menu__nav {
         flex-direction: row;
         gap: 10px;
+
+        margin-top: 0;
     }
 
     .header-menu__nav-link {

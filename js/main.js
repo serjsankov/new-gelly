@@ -80,7 +80,11 @@ window.addEventListener("DOMContentLoaded", () => {
               } else {
                 document.body.style.overflow = "scroll";
               }
-            }
+          }
+          if (event.target.closest(".header-menu__nav-link")) { 
+              header.classList.remove("active");
+              document.body.style.overflow = "scroll";
+          }
 
       })
   }
