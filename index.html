@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset-style.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.min.css" />
     <link rel="stylesheet" href="./css/sumoselect2.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -279,7 +280,7 @@
                                     <span class="equip-list__card-price-big">10 187 000 ₽</span>
                                 </span>
                             </div>
-                            <button class="btn btn_bg_blue equip-list__card-button">зафиксировать цену</button>
+                            <button class="btn btn_bg_blue equip-list__card-button" data-fancybox data-src="#price">зафиксировать цену</button>
                         </div>
                     </div>
                 </div>
@@ -409,6 +410,25 @@
         </div>
         <div class="footer-line"></div>
     </footer>
+    <div class="pop-up" id="price" style="display: none;">
+        <form action="" class="pop-up__form">
+            <div class="pop-up__form-inputs">
+                <input type="text" name="name" class="pop-up__form-input" placeholder="ФИО" required>
+                <input type="tel" name="phone" class="pop-up__form-input" placeholder="Телефон" required>
+            </div>
+            <div class="form-checkbox">
+                <label for="check-credit-pop">
+                  <span class="checkbox">
+                    <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="checkbox-text">
+                    Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                  </span>
+                </label>
+              </div>
+        </form>
+    </div>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
