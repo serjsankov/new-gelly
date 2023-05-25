@@ -744,6 +744,10 @@
     position: relative;
 }
 
+#popupFix .pop-up__bg-color-list {
+    margin-right: -43px;
+}
+
 .pop-up__bg-color-list-img {
     position: absolute;
     left: -36px;
@@ -757,6 +761,7 @@
 .pop-up__bg-color-item_blue {
     color: var(--color-black-black-blue);
 }
+
 
 .pop-up__img-cont {
     display: block;
@@ -814,10 +819,6 @@
     margin-left: 36px;
 }
 
-/* .pop-up__line-img {
-    position: absolute;
-    right: 0;
-} */
 
 .pop-up__head::after {
     content: "";
