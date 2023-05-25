@@ -490,7 +490,7 @@ button {
     color: var(--color-black-black-blue);
 }
 
-.model-list__item.info-blue .model-list__item-info {
+.model-list__item:nth-child(2n) .model-list__item-info {
     background: var(--color-black-blue);
 
     color: var(--color-gray);
@@ -567,11 +567,12 @@ button {
     background: var(--color-black-black-blue);
 }
 
-.model-list__item.info-blue .model-list__item-info-list {
+
+.model-list__item:nth-child(2n) .model-list__item-info-list {
     border-left: 1px solid var(--color-gray);
 }
 
-.model-list__item.info-blue .model-list__item-info-list::before {
+.model-list__item:nth-child(2n) .model-list__item-info-list::before {
     content: "";
 
     display: block;
@@ -586,7 +587,7 @@ button {
     background: var(--color-gray);
 }
 
-.model-list__item.info-blue .model-list__item-info-list::after {
+.model-list__item:nth-child(2n) .model-list__item-info-list::after {
     content: "";
 
     display: block;
@@ -651,8 +652,20 @@ button {
 }
 
 
-.model-list__item.info-blue .model-list__item-btn.btn.btn_bg_blue {
+.model-list__item:nth-child(2n).model-list__item-btn.btn.btn_bg_blue {
     border: 1px solid var(--color-gray);
+}
+
+.model-list__item:nth-child(2n) .btn_bg_blue {
+    background: var(--color-gray);
+    border: 1px solid var(--color-black-black-blue);
+    color: var(--color-black-black-blue);
+}
+
+.model-list__item:nth-child(2n) .btn_bg_gray {
+    border: 1px solid var(--color-gray);
+    background: var(--color-black-blue);
+    color: var(--color-gray);
 }
 
 

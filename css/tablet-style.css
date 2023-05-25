@@ -28,7 +28,7 @@
     position: relative;
 }
 
-.model-list__item.info-blue {
+.model-list__item:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
