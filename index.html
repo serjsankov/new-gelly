@@ -86,7 +86,7 @@
         <div class="main-banner__bottom">
             <div class="container">
                 <img class="main-banner__bottom-img" src="./img/main-banner-car.png" alt="car">
-            <button class="main-banner__bottom-button">получить предложение</button>
+            <button class="main-banner__bottom-button" data-fancybox data-src="#popupSpecial">получить предложение</button>
             <div class="main-banner__bottom-flex">
                 <div class="main-banner__bottom-left">
                     <span class="main-banner__bottom-big-text">4,9%</span>
@@ -280,7 +280,7 @@
                                     <span class="equip-list__card-price-big">10 187 000 ₽</span>
                                 </span>
                             </div>
-                            <button class="btn btn_bg_blue equip-list__card-button" data-fancybox data-src="#price">зафиксировать цену</button>
+                            <button class="btn btn_bg_blue equip-list__card-button" data-fancybox data-src="#popupPrice">зафиксировать цену</button>
                         </div>
                     </div>
                 </div>
@@ -410,24 +410,158 @@
         </div>
         <div class="footer-line"></div>
     </footer>
-    <div class="pop-up" id="price" style="display: none;">
-        <form action="" class="pop-up__form">
-            <div class="pop-up__form-inputs">
-                <input type="text" name="name" class="pop-up__form-input" placeholder="ФИО" required>
-                <input type="tel" name="phone" class="pop-up__form-input" placeholder="Телефон" required>
+    <div class="pop-up" id="popupPrice">
+        <div class="pop-up__bg-color gray">
+            <span class="pop-up__head">Специальные цены<br>
+                на весь модельный ряд в <span class="pop-up__head-color">в geely</span>
+            </span>
+            <span class="pop-up__sub-head">КАСКО <span class="pop-up__sub-head small-text"> или </span> 3 ТО В ПОДАРОК
+            <div class="pop-up__sub-head-line1">
+                <div class="pop-up__sub-head-line2"></div>
             </div>
-            <div class="form-checkbox">
-                <label for="check-credit-pop">
-                  <span class="checkbox">
-                    <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="checkbox-text">
-                    Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
-                  </span>
-                </label>
-              </div>
-        </form>
+            </span>
+            <div class="pop-up__bg-color-list">
+                <div class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></div>
+                <div class="pop-up__bg-color-item pop-up__bg-color-item_blue">Первоначальный взнос: <b> 0%</b></div>
+                <img src="./img/popup-line.svg" alt="line" class="pop-up__bg-color-list-img">
+            </div>
+        </div>
+        <div class="pop-up__bg-color blue">
+            <div class="pop-up__bg-color-line1">
+                <div class="pop-up__bg-color-line2"></div>
+            </div>
+            <span class="pop-up__bg-color-text">Оставьте заявку и получите отсрочку платежа на <span class="text_border_bottom_white"> 3 месяца!</span></span>
+            <ul class="pop-up__bg-color-list">
+                <li class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></li>
+                <li class="pop-up__bg-color-item">Первоначальный взнос <b> 0%</b></li>
+                <li class="pop-up__bg-color-item"><b>КАСКО или 3 ТО в подарок</b></li>
+            </ul>
+            <form action="" class="pop-up__form">
+                <div class="pop-up__form-inputs">
+                    <input type="text" name="name" class="pop-up__form-input" placeholder="ФИО" required>
+                    <input type="tel" name="phone" class="pop-up__form-input" placeholder="Телефон" required>
+                </div>
+                <button class="button pop-up__form-btn btn btn_bg_gray  js--send-btn">Рассчитать кредит</button>
+                <div class="form-checkbox">
+                    <label for="checkbox__input-text">
+                      <span class="checkbox">
+                        <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                        <span class="custom-checkbox"></span>
+                      </span>
+                      <span class="checkbox-text">
+                        Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+            </form>
+            <div class="pop-up__bg-color-line3"></div>
+        </div>
+        <div class="pop-up__img-cont">
+            <img src="./img/popup-car.webp" alt="car">
+            <div class="pop-up__img-cont-bg"></div>
+        </div>
+    </div>
+    <div class="pop-up" id="popupFix">
+        <div class="pop-up__bg-color gray">
+            <span class="pop-up__head">Специальные цены<br>
+                на весь модельный ряд в <span class="pop-up__head-color">в geely</span>
+            </span>
+            <span class="pop-up__sub-head"><span class="pop-up__sub-head small-text"> В кредит <span class="pop-up__head-color"> </span>от 4,9%</span></span>
+            <div class="pop-up__sub-head-line1">
+                <div class="pop-up__sub-head-line2"></div>
+            </div>
+            </span>
+            <div class="pop-up__bg-color-list">
+                <div class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></div>
+                <div class="pop-up__bg-color-item pop-up__bg-color-item_blue">Подарки на выбор:<b>КАСКО, 3 ТО</b><br> или <b>отсрочка платежа 3 месяца<br> в ПОДАРОК</b></div>
+                <img src="./img/popup-line.svg" alt="line" class="pop-up__bg-color-list-img">
+            </div>
+        </div>
+        <div class="pop-up__bg-color blue">
+            <div class="pop-up__bg-color-line1">
+                <div class="pop-up__bg-color-line2"></div>
+            </div>
+            <span class="pop-up__bg-color-text">Зафиксируйте цену и получите подарок при оформлении</span>
+            <ul class="pop-up__bg-color-list">
+                <li class="pop-up__bg-color-item">В кредит <b>от 4,9%</b></li>
+                <li class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></li>
+                <li class="pop-up__bg-color-item">Подарки на выбор: <b> -КАСКО, 3 ТО,<br> отсрочка платежа на 3 месяца</b></li>
+            </ul>
+            <form action="" class="pop-up__form">
+                <div class="pop-up__form-inputs">
+                    <input type="text" name="name" class="pop-up__form-input" placeholder="ФИО" required>
+                    <input type="tel" name="phone" class="pop-up__form-input" placeholder="Телефон" required>
+                </div>
+                <button class="button pop-up__form-btn btn btn_bg_gray  js--send-btn">Рассчитать кредит</button>
+                <div class="form-checkbox">
+                    <label for="checkbox__input-text">
+                      <span class="checkbox">
+                        <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                        <span class="custom-checkbox"></span>
+                      </span>
+                      <span class="checkbox-text">
+                        Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+            </form>
+            <div class="pop-up__bg-color-line3"></div>
+        </div>
+        <div class="pop-up__img-cont">
+            <img src="./img/popup-car.webp" alt="car">
+            <div class="pop-up__img-cont-bg"></div>
+        </div>
+    </div>
+    <div class="pop-up" id="popupSpecial">
+        <div class="pop-up__bg-color gray">
+            <span class="pop-up__head">Специальные цены<br>
+                на весь модельный ряд в <span class="pop-up__head-color">в geely</span>
+            </span>
+            <span class="pop-up__sub-head"><span class="pop-up__sub-head small-text"> В кредит <span class="pop-up__head-color"> </span>от 4,9%</span></span>
+            <div class="pop-up__sub-head-line1">
+                <div class="pop-up__sub-head-line2"></div>
+            </div>
+            </span>
+            <div class="pop-up__bg-color-list">
+                <div class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></div>
+                <div class="pop-up__bg-color-item pop-up__bg-color-item_blue">Госпрограмма:<br>-20% от стоимости</div>
+                <img src="./img/popup-line.svg" alt="line" class="pop-up__bg-color-list-img">
+            </div>
+        </div>
+        <div class="pop-up__bg-color blue">
+            <div class="pop-up__bg-color-line1">
+                <div class="pop-up__bg-color-line2"></div>
+            </div>
+            <span class="pop-up__bg-color-text">Уникальное предложение на покупку GEELY</span>
+            <ul class="pop-up__bg-color-list">
+                <li class="pop-up__bg-color-item">Госпрограмма: <b> -20% от стоимости</b></li>
+                <li class="pop-up__bg-color-item">Ваша выгода - <b> 150 000 ₽</b></li>
+                <li class="pop-up__bg-color-item">В кредит <b>от 4,9% +ПОДАРОК НА ВЫБОР</b></li>
+            </ul>
+            <form action="" class="pop-up__form">
+                <div class="pop-up__form-inputs">
+                    <input type="text" name="name" class="pop-up__form-input" placeholder="ФИО" required>
+                    <input type="tel" name="phone" class="pop-up__form-input" placeholder="Телефон" required>
+                </div>
+                <button class="button pop-up__form-btn btn btn_bg_gray  js--send-btn">Рассчитать кредит</button>
+                <div class="form-checkbox">
+                    <label for="checkbox__input-text">
+                      <span class="checkbox">
+                        <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                        <span class="custom-checkbox"></span>
+                      </span>
+                      <span class="checkbox-text">
+                        Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+            </form>
+            <div class="pop-up__bg-color-line3"></div>
+        </div>
+        <div class="pop-up__img-cont">
+            <img src="./img/popup-car.webp" alt="car">
+            <div class="pop-up__img-cont-bg"></div>
+        </div>
     </div>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
